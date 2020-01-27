@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" minHeight="550.0" minWidth="500.0" nodeOrientation="LEFT_TO_RIGHT" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxTunnepaivakirja.MuokkaaMerkintaaController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="152.8" minWidth="220.0" prefWidth="148.8" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="49.59998168945312" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.2" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.59998626708983" minHeight="4.0000061035156165" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.59998626708983" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.59998626708983" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.99998168945314" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.99998168945314" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.99998168945314" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.5999755859375" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.4000183105469" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.39997558593751" minHeight="4.799993896484381" prefHeight="60.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Päivämäärä:" />
+            <Label text="Kellonaika:" GridPane.rowIndex="1" />
+            <Label text="Tunnetila 1:" GridPane.rowIndex="2" />
+            <Label text="Tunteen voimakkuus (1-10) 1:" GridPane.rowIndex="5" />
+            <Label text="Tilanne tai tapahtuma:" GridPane.rowIndex="8" />
+            <Label text="Tunnereaktio:" GridPane.rowIndex="9" />
+            <Label text="Lisätietoja:" GridPane.rowIndex="10" />
+            <DatePicker fx:id="editPvm" prefWidth="200.0" promptText="24.08.2018" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </DatePicker>
+            <TextField fx:id="editKello" maxWidth="200.0" prefWidth="200.0" text="12:00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="editVoima1" maxWidth="200.0" text="7" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="editTilanne" maxWidth="200.0" text="Tentti hyvin" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="editReaktio" maxWidth="200.0" text="Aktiivisuuden nousu" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextArea fx:id="editTietoja" maxHeight="100.0" maxWidth="200.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextArea>
+            <Label text="Tunnetila 2:" GridPane.rowIndex="3" />
+            <Label text="Tunnetila 3:" GridPane.rowIndex="4" />
+            <TextField fx:id="editVoima2" maxWidth="200.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="editVoima3" maxWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Tunteen voimakkuus (1-10) 2:" GridPane.rowIndex="6" />
+            <Label text="Tunteen voimakkuus (1-10) 3:" GridPane.rowIndex="7" />
+            <ChoiceBox fx:id="editTunne1" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="editTunne2" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="editTunne3" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="4.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button minWidth="50.0" mnemonicParsing="false" onAction="#handleTallenna" text="Tallenna">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handlePeruuta" text="Peruuta">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="labelVirhe">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
